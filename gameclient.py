@@ -15,4 +15,5 @@ class ConnectionThread(threading.Thread):
         client.send(pickledList)
         client.close()
 
-ConnectionThread().start()
+for x in xrange ( 5 ):
+   ConnectionThread().start()
